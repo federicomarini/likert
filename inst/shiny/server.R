@@ -3,8 +3,9 @@ require(shiny)
 require(devtools)
 #install_github('likert','kspeer')
 require(likert)
+require(reshape)
 data(pisaitems)
-source('C:/Users/User/Dropbox/Github/likert/R/xtable.likert.R')#rm this when github syncs
+#source('C:/Users/User/Dropbox/Github/likert/R/xtable.likert.R')#rm this when github syncs
 
 items24 <- pisaitems[,substr(names(pisaitems), 1,5) == 'ST24Q']
 
